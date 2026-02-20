@@ -1,0 +1,171 @@
+/* ===== RESET ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* ===== COLORS ===== */
+:root{
+  --primary:#93490cee;
+  --accent:#e67e22;
+  --light:#f4f4f4;
+  --white:#ffffff;
+}
+
+/* ===== BODY ===== */
+body{
+  font-family: Arial, sans-serif;
+  background: var(--light);
+  padding:20px;
+}
+
+/* ===== HEADER ===== */
+header{
+  background: var(--white);
+  padding:15px;
+  border-radius:12px;
+  margin-bottom:20px;
+}
+
+h1,h2,h3{
+  color:var(--primary);
+  margin-bottom:10px;
+}
+
+/* ===== NAV ===== */
+nav a{
+  text-decoration:none;
+  margin-right:12px;
+  color:var(--primary);
+  padding:6px 10px;
+  border-radius:6px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  background:var(--accent);
+  color:white;
+}
+
+/* ===== BUTTONS ===== */
+button{
+  background:var(--primary);
+  color:white;
+  border:none;
+  padding:10px 15px;
+  border-radius:8px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  background:var(--accent);
+}
+
+button:active{
+  transform:scale(0.95);
+}
+
+/* ===== PRODUCT CARDS ===== */
+article{
+  display:inline-block;
+  width:200px;
+  background:white;
+  padding:10px;
+  margin:10px;
+  border-radius:12px;
+  box-shadow:0 0 6px gray;
+  vertical-align:top;
+}
+
+article img{
+  width:100%;
+  border-radius:10px;
+}
+
+/* ===== PRODUCTS + FILTER ===== */
+main{
+  display:inline-block;
+  width:70%;
+}
+
+aside{
+  display:inline-block;
+  width:25%;
+  vertical-align:top;
+  background:white;
+  padding:10px;
+  border-radius:10px;
+  margin-left:10px;
+}
+
+/* ===== CART ===== */
+.cart:empty{
+  border:2px dashed red;
+  padding:20px;
+  text-align:center;
+}
+
+/* ===== PRICE SYMBOL ===== */
+.price::before{
+  content:"₱ ";
+}
+
+/* ===== TABLE ===== */
+table{
+  border-collapse:collapse;
+  width:60%;
+  background:white;
+  margin-top:20px;
+}
+
+table th, table td{
+  border:1px solid gray;
+  padding:8px;
+}
+
+table td:first-child{
+  font-weight:bold;
+  color:var(--primary);
+}
+
+/* ===== REVIEWS ===== */
+.review::before{
+  content:"“";
+  font-size:20px;
+}
+
+.review::after{
+  content:"”";
+  font-size:20px;
+}
+
+/* ===== FORM ===== */
+input{
+  padding:5px;
+  margin-top:5px;
+}
+
+input:focus{
+  outline:2px solid var(--accent);
+}
+
+input:required{
+  border:2px solid red;
+}
+
+input:valid{
+  border:2px solid green;
+}
+
+/* ===== LIST MARKER ===== */
+ul li::marker{
+  color:var(--accent);
+  font-size:18px;
+}
+
+/* ===== SECTIONS ===== */
+section{
+  margin-bottom:20px;
+}
