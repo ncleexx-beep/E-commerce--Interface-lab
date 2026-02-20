@@ -3,17 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>Checkout</title>
+
+  <!-- LINK CSS -->
+  <link rel="stylesheet" href="style .css">
 </head>
 <body>
+
+<header>
+  <h1>MyShop</h1>
+  <nav>
+    <a href="landing.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart</a>
+    <a href="account.html">Account</a>
+  </nav>
+</header>
 
 <section>
   <h1>Shipping Address</h1>
   <fieldset>
     <label>Name:</label>
-    <input type="text" required><br>
+    <input type="text" required><br><br>
 
     <label>Street:</label>
-    <input type="text" required><br>
+    <input type="text" required><br><br>
 
     <label>Zip Code:</label>
     <input type="text" required>
@@ -23,23 +36,21 @@
 <section>
   <h2>Payment Method</h2>
   <form>
-    <input type="radio" name="payment" id="card">
+    <input type="radio" name="payment" id="card" required>
     <label for="card">Credit Card</label><br>
 
     <input type="radio" name="payment" id="paypal">
-    <label for="paypal">PayPal</label><br>
+    <label for="paypal">PayPal</label><br><br>
 
     <button>Place Order</button>
-    
-    
   </form>
 </section>
 
 <aside>
   <h2>Order Summary</h2>
-  <p>Items: $50</p>
-  <p>Shipping: $5</p>
-  <p>Total: $55</p>
+  <p>Items: <span class="price">50</span></p>
+  <p>Shipping: <span class="price">5</span></p>
+  <p>Total: <span class="price">55</span></p>
 </aside>
 
 </body>
