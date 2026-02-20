@@ -3,32 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <title>Shopping Cart</title>
+
+  <!-- LINK CSS -->
+  <link rel="stylesheet" href="style .css">
 </head>
 <body>
 
+<header>
+  <h1>MyShop</h1>
+  <nav>
+    <a href="landing.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart</a>
+    <a href="account.html">Account</a>
+  </nav>
+</header>
+
 <h1>Your Cart</h1>
 
-<ul>
+<!-- cart class for Task 4 -->
+<ul class="cart">
   <li>
-    <img src="product1.jpg" alt="Product 1" width="50">
-    <h3>Product 1</h3>
-    <p>$50</p>
+    <img src="Facial Wash.jpg" alt="Product 1" width="50">
+    <h3>Facial Wash</h3>
+    <p class="price">50</p>
+
     <label>Quantity:
-      <input type="number" min="1" value="1">
+      <input type="number" min="2" value="2" required>
     </label>
   </li>
 </ul>
 
 <section>
-  <h2>Subtotal: $50</h2>
+  <h2>Subtotal: <span class="price">50</span></h2>
+
   <a href="checkout.html">
     <button>Proceed to Checkout</button>
   </a>
 </section>
 
 <section>
-     <a href="Product.html">
-  <p>Add to Cart</p>
+  <a href="products.html">
+    <button>Add More Products</button>
+  </a>
 </section>
 
 </body>
