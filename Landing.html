@@ -2,48 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Landing Page</title>
+  <title>Product Detail</title>
+
+  <!-- LINK CSS -->
+  <link rel="stylesheet" href="style .css">
 </head>
 <body>
 
 <header>
   <h1>MyShop</h1>
-
   <nav>
-    <ul>
-      <li><a href="landing.html">Home</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="cart.html">Cart</a></li>
-      <li><a href="account.html">Account</a></li>
-    </ul>
+    <a href="landing.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart</a>
+    <a href="account.html">Account</a>
   </nav>
 </header>
 
+<article>
+  <h1>Facial Wash</h1>
+  <img src="Facial Wash.jpg" alt="Product 1" width="200">
+  <p class="price">150</p>
+</article>
+
+<table>
+  <caption>Product Details</caption>
+  <tr>
+    <th>Feature</th>
+    <th>Details</th>
+  </tr>
+  <tr>
+    <td>Brand</td>
+    <td>Glow Beauty</td>
+    
+  </tr>
+  <tr>    
+    <td>Weight</td>
+    <td>150ml
+  </tr>
+    <td>Ingredients</td>
+    <td>Aloe Vera, Vitamin E, Chamomile Extract</td>
+  </tr>
+    <td> Skin Type</td>
+    <td>All Skin Types</td>
+     
+</table>
+
+<form>
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" min="1" value="1" required>
+  <button>Add to Cart</button>
+</form>
 
 <section>
-  <h1>Welcome to MyShop</h1>
-  <p>Discover the best products at affordable prices.</p>
-  <a href="Product.html">
-  <button>Shop Now</button>
-  </a>
-</section>
+  <h2>User Reviews</h2>
 
-<section>
-  <h2>Featured Products</h2>
+  <article class="review">
+    <h3>John</h3>
+    <blockquote>Great product! Highly recommended.</blockquote>
+  </article>
   <article>
-    <h3>Product 1</h3>
-    <p>$50</p>
+  <h1>Makeup Set</h1>
+  <img src="makeup.jpg" alt="Makeup Set" width="200">
+  <p class="price">$120</p>
+
+  <table>
+    <caption>Technical Specifications</caption>
+    <tr><th>Feature</th><th>Details</th></tr>
+    <tr><td>Brand</td><td>BeautyPro</td></tr>
+    <tr><td>Weight</td><td>500g</td></tr>
+    <tr><td>Items Included</td><td>Lipstick, Blush, Eyeshadow Palette, Mascara, Brushes</td></tr>
+    <tr><td>Skin Type</td><td>All Skin Types</td></tr>
+    <tr><td>Benefits</td><td>Complete makeup essentials, travel-friendly, high-quality pigments</td></tr>
+  </table>
+
+  <form id="addToCartForm">
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" min="1" value="1" required>
+    <button type="submit">Add to Cart</button>
+  </form>
+</article>
+
+<section style="max-width:400px; margin:20px auto;">
+  <h2>User Reviews</h2>
+  <article class="review">
+    <h3>Sophia</h3>
+    <blockquote>Love this set! Perfect for daily and party looks.</blockquote>
+  </article>
+  <article class="review">
+    <h3>Emma</h3>
+    <blockquote>Everything I need in one set. Great quality products!</blockquote>
   </article>
 </section>
 
-<section>
-  <h2>Discounted Products</h2>
-  <article>
-    <h3>Product 2</h3>
-    <p><del>$40</del> $30</p>
-  </article>
 </section>
 
 </body>
-  </html>
-  
+</html>
